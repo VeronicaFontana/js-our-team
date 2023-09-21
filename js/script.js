@@ -1,4 +1,4 @@
-const dati = [
+const team = [
   {
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
@@ -30,3 +30,15 @@ const dati = [
     foto: "barbara-ramos-graphic-designer.jpg"
   },
 ]
+
+let ul = document.querySelector("ul");
+
+
+for(let member of team){
+  console.log(member);
+  console.log(member.nome);
+  ul.innerHTML += `<li>${member.nome}, ${member.ruolo}, ${member.foto}</li>`
+}
+
+
+
