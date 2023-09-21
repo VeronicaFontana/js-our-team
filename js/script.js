@@ -2,7 +2,7 @@ const team = [
   {
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
-    foto: "angela-caroll-chief-editor.jpg"
+    foto: "wayne-barnett-founder-ceo.jpg"
   },
   {
     nome: "Angela Caroll",
@@ -32,7 +32,6 @@ const team = [
 ]
 
 let cardBox = document.querySelector(".card-box");
-
 
 for(let member of team){
   console.log(member);
