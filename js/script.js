@@ -37,7 +37,8 @@ let ul = document.querySelector("ul");
 for(let member of team){
   console.log(member);
   console.log(member.nome);
-  ul.innerHTML += `<li>${member.nome}, ${member.ruolo}, ${member.foto}</li>`
+  ul.innerHTML += `<li>${member.nome}, ${member.ruolo}</li> 
+  <img src="img/${member.foto}"/>`
 }
 
 
