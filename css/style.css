@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(251, 239, 224);
+}
+
+.text{
+  max-width: 500px;
+  color: grey;
+}
+
+.card-box div{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px;
+}
+
+.card-box div .card-text{
+  margin: 30px 30px;
+  text-align: center;
+  color: grey;
+}
+
+.card-box div .card-text .name{
+  font-weight: bold;
+  font-size: 1.2rem;
+}

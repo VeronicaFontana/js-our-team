@@ -31,14 +31,13 @@ const team = [
   },
 ]
 
-let ul = document.querySelector("ul");
+let cardBox = document.querySelector(".card-box");
 
 
 for(let member of team){
   console.log(member);
   console.log(member.nome);
-  ul.innerHTML += `<li>${member.nome}, ${member.ruolo}</li> 
-  <img src="img/${member.foto}"/>`
+  cardBox.innerHTML += `<div><img src="img/${member.foto}"/><div class="card-text"><span class="name">${member.nome}</span> <span>${member.ruolo}</span></div></div>`
 }
 
 
