@@ -33,11 +33,17 @@ const team = [
 
 let cardBox = document.querySelector(".card-box");
 
-for(let member of team){
-  console.log(member);
-  console.log(member.nome);
-  cardBox.innerHTML += `<div><img src="img/${member.foto}"/><div class="card-text"><span class="name">${member.nome}</span> <span>${member.ruolo}</span></div></div>`
-}
+team.forEach( (member) => {
+  cardBox.innerHTML += `
+  <div>
+    <img src="img/${member.foto}"/>
+    <div class="card-text">
+      <span class="name">${member.nome}</span> 
+      <span>${member.ruolo}</span>
+    </div>
+  </div>
+  `
+})
 
 
 
